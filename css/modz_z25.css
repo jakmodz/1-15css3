@@ -3,13 +3,13 @@ div#border
 	width: 100%;
 	border: 2px black solid;
 }
-p#tytul1
+p#title1
 {
 	text-align:center;
 	font-size:50px;
 	color:gold;
 }
-p#tytul2
+p#title2
 {
 	text-align:right;
 	font-size:50px;
@@ -82,7 +82,7 @@ p#zdaniedrud
 	word-spacing: 12px;
 	letter-spacing:2ex;
 }
-p#zdanietrzd
+p#zdanietre
 {
 	text-align:right;
 	text-transform:capitalize;

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #coos {
+            list-style: disc;
+        }
+    </style>
+</head>
+<body>
+    <ol type="1">
+        <li><p>Cel stosowania szablonów HTML 4.01 Transitional</p><br>
+        </li>
+        <li>Opis</li>
+            <ul type="circle">
+                <li><b><p>‘Strict’</p></b></li>
+                <li><b><p>‘Transitional’</p></b></li>
+                <li><b><p>‘Frame Set’</p></b></li>
+            </ul>
+        </il>
+        <li><p>Przykłady szablonów HTML 4.01 Transitional<br>
+            -w tabeli<br>
+            -wytłumaczenie<br>
+            -dokładny opis</p></li>
+            <li><p>Wartości domyślme</p></li>
+    </ol>
+
+    <ol type="1">
+        <li>Aby powiedzieć przeglądarce jakiego języka znaczników używamy, precyzujemy deklaracje
+            typu dokumentu (DocType) na samym początku kodu HTML, czyli przed znacznikiem
+            <html>. Podanie adresu wersji DTD, pozwala przeglądarce pobrać wersję DTD oraz
+            wszystkie potrzebne zestawy znaków.</li>
+        <li><br><ul id="coos" >
+            <li><b>‘Strict’ -></b> Strict składa się z bardzo rygorystycznych reguł co można a czego nie
+                można robić w danym dokumencie HTML,</li>
+            <li><b>‘Transitional’-></b>Transitional jest bardziej łagodnym zbiorem zasad i potrafi
+                wybaczyć pewne rzeczy</li>
+            <li><b>‘Frame Set’ -></b>Frame Set prawie na wymarciu w obecnych czasach.
+            </li>
+        </ul></li>
+        <li><br>
+        
+        <p>Deklaracja typu dokumentu</p>
+        <p>Deklaracja typu dokumentu (DTD - document type declaration) określa poziom użytego na
+            stronie języka HTML:
+            </p>
+            <p><b> Strict DTD - (ścisła)</b>     zawiera wszystkie elementy i atrybuty, które nie są zdeprecjonowane
+                (nie deprecated) oraz nie pojawiają się w dokumentach z ramkami (ponadto nie obejmuje
+                elementu IFRAME ani atrybutu target="...")</p>
+                <textarea readonly disabled style="height: 50px;width: 300px;"  ><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+                </textarea> 
+                lub
+                 <textarea readonly disabled style="height: 50px;width: 300px;"  ><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+                    "http://www.w3.org/TR/html4/strict.dtd"></textarea></li>
+                    <p><b>Transitional DTD - (przejściowa) lub inaczej loose DTD ("luźna")</b>) - zawiera wszystko
+                        co w Strict DTD plus elementy i atrybuty zdeprecjonowane oraz element IFRAME i atrybut
+                        target="..."
+                        </p>
+                        <textarea readonly disabled style="height: 50px;width: 300px;"  >
+                        <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"></textarea>
+                        lub 
+                        <textarea readonly disabled style="height: 50px;width: 300px;"  ><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                            "http://www.w3.org/TR/html4/loose.dtd"></textarea>
+        </li>
+        <li><b>wartosc domyslna</b>
+        <br>
+    <p>Jeśli nie podamy żadnej z powyższych wersji DTD, jako domyślna najprawdopodobniej
+        zostanie przyjęta Transitional DTD (w MSIE), ale sposób ten absolutnie nie jest zalecany! W
+        każdym dokumencie HTML, na samym początku, powinna się pojawić deklaracja DTD.
+        Najbezpieczniejszym rozwiązaniem, kiedy kluczowe znaczenie ma kompatybilność wstecz,
+        wydaje się użycie Transitional DTD, chyba że chcemy się ściśle trzymać wytycznych
+        specyfikacji co do znaczników i atrybutów zdeprecjonowanych, wtedy należy zastosować
+        Strict DTD i nie używać tych znaczników ani atrybutów.
+        </p></li>
+    </ol>
+</body>
+</html>
