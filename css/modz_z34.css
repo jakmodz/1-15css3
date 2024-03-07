@@ -1,0 +1,26 @@
+
+h1
+{
+    font-size: 7px;
+    text-align: center;
+    background-color: red;
+    border-right: 3px dashed gray ;
+    border-left: 3px dashed red; 
+    border-top: 3px dashed yellow ;
+    border-bottom: 3px dashed lime ;
+    width: 300pt;
+    height: 3cm;
+    margin-left: 300px;
+    background-color: crimson
+
+}
+h2
+{
+    margin-left: 600px;
+    width: 250pt; 
+    height: 2.5cm;
+    border: 3px ridge purple;
+    font-size: 15px;
+    text-align: center;
+    background-color: darksalmon;
+}
